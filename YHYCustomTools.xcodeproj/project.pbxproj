@@ -15,6 +15,8 @@
 		5E109B0B21F0725A00BBF5A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E109B0A21F0725A00BBF5A1 /* main.m */; };
 		5E109B1521F0725B00BBF5A1 /* YHYCustomToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E109B1421F0725B00BBF5A1 /* YHYCustomToolsTests.m */; };
 		5E109B2021F0725B00BBF5A1 /* YHYCustomToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E109B1F21F0725B00BBF5A1 /* YHYCustomToolsUITests.m */; };
+		5E109B4921F0851900BBF5A1 /* YHYcontrol.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E109B4721F0851900BBF5A1 /* YHYcontrol.m */; };
+		5E109B4A21F0851900BBF5A1 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E109B4821F0851900BBF5A1 /* NSArray+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		5E109B1B21F0725B00BBF5A1 /* YHYCustomToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHYCustomToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E109B1F21F0725B00BBF5A1 /* YHYCustomToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHYCustomToolsUITests.m; sourceTree = "<group>"; };
 		5E109B2121F0725B00BBF5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E109B4521F0851900BBF5A1 /* YHYcontrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHYcontrol.h; sourceTree = "<group>"; };
+		5E109B4621F0851900BBF5A1 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		5E109B4721F0851900BBF5A1 /* YHYcontrol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHYcontrol.m; sourceTree = "<group>"; };
+		5E109B4821F0851900BBF5A1 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		5E109AEF21F0725A00BBF5A1 = {
 			isa = PBXGroup;
 			children = (
+				5E109B4421F0851900BBF5A1 /* LogTools */,
 				5E109AFA21F0725A00BBF5A1 /* YHYCustomTools */,
 				5E109B1321F0725B00BBF5A1 /* YHYCustomToolsTests */,
 				5E109B1E21F0725B00BBF5A1 /* YHYCustomToolsUITests */,
@@ -130,6 +137,17 @@
 				5E109B2121F0725B00BBF5A1 /* Info.plist */,
 			);
 			path = YHYCustomToolsUITests;
+			sourceTree = "<group>";
+		};
+		5E109B4421F0851900BBF5A1 /* LogTools */ = {
+			isa = PBXGroup;
+			children = (
+				5E109B4521F0851900BBF5A1 /* YHYcontrol.h */,
+				5E109B4721F0851900BBF5A1 /* YHYcontrol.m */,
+				5E109B4621F0851900BBF5A1 /* NSArray+Log.h */,
+				5E109B4821F0851900BBF5A1 /* NSArray+Log.m */,
+			);
+			path = LogTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E109B4A21F0851900BBF5A1 /* NSArray+Log.m in Sources */,
 				5E109B0021F0725A00BBF5A1 /* ViewController.m in Sources */,
 				5E109B0B21F0725A00BBF5A1 /* main.m in Sources */,
+				5E109B4921F0851900BBF5A1 /* YHYcontrol.m in Sources */,
 				5E109AFD21F0725A00BBF5A1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
